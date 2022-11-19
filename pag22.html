@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina 22</title>
+</head>
+<body>
+    <script>
+        function adicionaTexto(texto){
+            const novoTexto = document.createTextNode(texto);
+            const p1 = document.getElementById("p1");
+            p1.appendChild(novoTexto);
+        }
+    </script>
+
+    <button onclick="adicionaTexto ('Mário, ');">Nome</button>
+    <button onclick="adicionaTexto ('Web, ');">Materia</button>
+    <button onclick="adicionaTexto ('JS, ');">Conteúdo</button>
+    <hr/>
+    <p id="p1">Primeiro Texto </p>
+</body>
+</html>

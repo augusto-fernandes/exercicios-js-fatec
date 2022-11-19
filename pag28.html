@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina 28</title>
+    <script>
+        function verificarMaior(){
+            numeros = document.getElementById('txtNumeros').value;
+            numeros = numeros.split(',');
+            var maior = parseInt(numeros[0]);
+            for(i = 1; i<numeros.length; i++){
+                if(parseInt(numeros[i]) > maior){
+                    maior = parseInt(numeros[i]);
+                }
+            }
+            alert( "O maior numero é "+maior);
+        }
+    </script>
+</head>
+<body>
+    numeros <input type="text"  id="txtNumeros">
+    <input type="button" value="Qual o maior?" onclick="verificarMaior()">
+</body>
+</html>
